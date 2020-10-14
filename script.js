@@ -34,8 +34,8 @@ function writePassword() {
 
   passwordText.value = password;
   var smallAlphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-  var bigAlphabet = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-  var specialCharacter = [" !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"]
+  var bigAlphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+  var specialCharacter = [" ", "!", "", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\", "^", "`", "{", "|", "}", "~", "]", "_"]
   
 //password is generated that matches the selected criteria
 
