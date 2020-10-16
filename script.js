@@ -16,17 +16,42 @@
 
     // Assignment Code
 // Create prompts for when the button is clicked: 
-var generateBtn = document.querySelector("#generate");
+  var generateBtn = document.querySelector("#generate");
 
 // prompted for the length of the password at least 8 characters and no more than 128 characters
-var userPasswordSize = prompt("Choose a password length between 8 - 128 characters");
-var userLoCase = confirm("Would you like to use lower case letters?");
-var userUpCase = confirm("Would you like to use upper case letters?");
-var userSpecial = confirm("Would you like to use special characters?");
+  var userPasswordSize = prompt("Choose a password length between 8 - 128 characters");
+  var userLoCase = confirm("Would you like to use lower case letters?");
+  var userUpCase = confirm("Would you like to use upper case letters?");
+  var userSpecial = confirm("Would you like to use special characters?");
+  var userNumber = confirm("Would you like to use numbers?");
+  var hold = [];
+  var randomPassword = "";
+  
+var altVarCharLow = "qwertyuiopasdfghjklzxcvbnm"
+var altVarCharUp = "QWERTYUIOPASDFGHJKLZXCVBNM"
+var altVarCharSpec = "!@#$%^&*"
+  var altVarCharNum = "1234567890"
+
+function generatePassword() {
+  if (userLoCase) {
+    hold = hold + altVarCharLow
+    }if (userUpCase) {
+    hold = hold + altVarCharUp
+    }if (userSpecial) {
+      hold = hold + altVarCharSpec
+    }if (userNumber) {
+      hold = hold + altVarCharNum
+    console.log(hold)
+  }
+  for (var i = 0; i < userPasswordSize; i++){
+    randomPassword = randomPassword + hold.charAt(Math.floor(Math.random() * Math.floor(hold.length)))
+  }
+  return randomPassword
+}  
+
 // prompted for character types to include in the password: lowercase, uppercase, numeric, and/or special characters
 
 // Validate the imput
-
 
     // Write password to the #password input
 
@@ -36,10 +61,7 @@ function writePassword() {
   
   
 
-  // passwordText.value = password;
-  // var smallLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-  // var bigLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-  // var specialCharacter = [" ", "!", "", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\", "^", "`", "{", "|", "}", "~", "]", "_"]
+  passwordText.value = password;
   
 //password is generated that matches the selected criteria
 
