@@ -16,5 +16,7 @@ Created a random password generator. The User will be able to select the criteri
 * Added if statements and alerts to insure that the user only entered the correct criteria if not they are alerted and returned to the beginning. 
 * Cleaned up formatting and ran the generator several times and it is working to specified parameters. 
 
+[password_generator site](https://ncwerner85.github.io/password_generator/)
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
